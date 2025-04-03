@@ -6,12 +6,16 @@
   "author": "Marcin Stalmach <marcin.stalmach123@outlook.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start-server": "nodemon server.js",
+    "start-client": "yarn --cwd client start",
+    "build-client": "yarn --cwd client build",
+    "test-client": "yarn --cwd client test"
   }
 }
