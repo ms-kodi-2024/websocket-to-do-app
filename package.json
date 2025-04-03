@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/ms-kodi-2024/websocket-to-do-app.git",
-  "author": "ms-kodi-2024",
+  "author": "Marcin Stalmach <marcin.stalmach123@outlook.com>",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.9"
   },
   "scripts": {
