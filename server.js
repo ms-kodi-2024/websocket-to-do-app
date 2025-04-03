@@ -3,13 +3,13 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'client/public')));
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/public/index.html'));
+  res.sendFile(path.join(__dirname, 'client/build/index.html'));
 });
 
-const server = app.listen(process.env.PORT || 8000, () => {
+const server = app.listen(process.env.PORT || 5000, () => {
   console.log('Server is running...');
 });
 
